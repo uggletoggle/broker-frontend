@@ -7,6 +7,82 @@
     box-sizing: border-box;
 }
 
+
+.box-login {
+    border-radius: 12px;
+    box-shadow: inset 10px 10px 5px rgba(0,0,0,0.2),
+                inset -10px -10px 15px rgba(255,255,255,0.1),
+                10px 10px 15px rgba(0,0,0,0.3),
+                -10px -10px 15px rgba(255,255,255,0.1);
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+
+.box-login h1 {
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+.box-login input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;    
+    cursor: pointer;
+}
+
+.box-login input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+.box-login input[type = "text"], .box-login input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;    
+}
+
+
+
+
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-around;
+    background: #2f2f2f;
+    width: 100%;
+}
+
+.mitad {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+}
+
 li, a {
     font-family: "Poppins", sans-serif;
     list-style: none;
@@ -43,22 +119,29 @@ header {
     padding: 30px 10px;
 }
 
-footer {
-    position: absolute;
-    padding: 20px;
-    color: whitesmoke;
-    top: 90%;
-    left:0;
+.grafico-linea {
+    padding-top: 60px;
+    width:70%;
 }
 
-body {
-    display: flex;
+.relojes {
+    padding-top: 60px;
+    display:flex;
     align-items: center;
-    min-height: 100vh;
-    justify-content: center;
-    background: #2f2f2f;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40%;
 }
+
+footer {
+    font-size: small;
+    position: absolute;
+    padding: 25px;
+    color: whitesmoke;
+    top: 92%;
+    left:37%;
+}
+
 
 .container {
     display: flex;
@@ -66,19 +149,19 @@ body {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 40px 0;
+    margin: 10px 0;
 }
 
 .container .card {
     position: relative;
-    min-width: 280px;
-    height: 300px;
+    min-width: 180px;
+    height: 200px;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
                 inset -5px -5px 15px rgba(255,255,255,0.1),
                 5px 5px 15px rgba(0,0,0,0.3),
                 -5px -5px 15px rgba(255,255,255,0.1);
     border-radius: 15px;
-    margin: 30px;
+    margin: 25px;
 }
 
 .container .card .box {

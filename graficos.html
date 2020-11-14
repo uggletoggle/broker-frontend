@@ -1,0 +1,77 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript" src="charts.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+   <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+      <header>
+          <h2>TORRES IOT</h2>
+          <nav>
+              <ul class="nav_links">
+                  <li><a href="#"></a>Indicadores</li>
+                  <li><a href="#"></a>Historico</li>
+                  <li><a href="#"></a>Logout</li>
+              </ul>
+          </nav>
+      </header>
+
+    <div class="relojes">
+
+
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class=content id="chart_div"></div>
+                    <div class=content style="color: white; font-size: 20px;">Voltaje: <span id="valor1"></span> V</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class=content id="chart_div2"></div>
+                    <div class=content style="color: white; font-size: 20px;">Temperatura: <span id="valor2"></span>° </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class=content id="chart_div3"></div>
+                    <div class=content style="color: white; font-size: 20px;">Presion: <span id="valor3"></span> mmHg</div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class=content id="chart_div4"></div>
+                    <div class=content style="color: white; font-size: 20px;">Vacio: <span id="valor4"></span> mmHg</div>
+                </div>
+            </div>
+        </div>
+  
+
+      </div>
+    <div class="mitad">
+
+        <div class="grafico-linea">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="grafico-linea">
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+
+      
+      <footer>
+          &copy; Todos los derechos reservados 2020
+      </footer>
+  </body>
+  <script src="linea.js"></script>
+
+</html>

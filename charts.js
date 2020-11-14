@@ -1,11 +1,8 @@
 google.charts.load('current', {'packages':['gauge']});
-      google.charts.setOnLoadCallback(() => drawChart([12,31,12]));
-
+google.charts.setOnLoadCallback(() => drawChart([12,31,12,14]));
 
       function drawChart(arregloDeDatos) {
-
             
-
         var data = google.visualization.arrayToDataTable([
           ['Label', 'Valor'],
           ['Voltaje', arregloDeDatos[0]],
@@ -21,6 +18,10 @@ google.charts.load('current', {'packages':['gauge']});
           ['Label', 'Valor'],
           ['Presion', arregloDeDatos[2]]
         ]);
+        var data4 = google.visualization.arrayToDataTable([
+          ['Label', 'Valor'],
+          ['Vacio', arregloDeDatos[3]]
+        ]);
 
         var options = {
           width: 400, height: 120,
@@ -32,8 +33,10 @@ google.charts.load('current', {'packages':['gauge']});
         var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
         var chart2 = new google.visualization.Gauge(document.getElementById('chart_div2'));
         var chart3 = new google.visualization.Gauge(document.getElementById('chart_div3'));
+        var chart4 = new google.visualization.Gauge(document.getElementById('chart_div4'));
 
         chart.draw(data, options);
         chart2.draw(data2, options);
         chart3.draw(data3, options);
+        chart4.draw(data4, options);
       }
